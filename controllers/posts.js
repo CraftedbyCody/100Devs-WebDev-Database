@@ -70,8 +70,8 @@ module.exports = {
         caption: req.body.caption,
         tag: req.body.tag,
         dish: req.body.dish,
-        source: req.body.source.trim().split('\n'),
-        ankiQuestion: req.body.ankiQuestion.trim().split('\n'),
+        source: req.body.source,
+        ankiQuestion: req.body.ankiQuestion,
         likes: 0,
         user: req.user.id,
       });
