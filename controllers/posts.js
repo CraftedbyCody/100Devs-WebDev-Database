@@ -70,7 +70,7 @@ module.exports = {
         caption: req.body.caption,
         tag: req.body.tag,
         dish: req.body.dish,
-        ingredients: req.body.ingredients.trim().split('\n'),
+        source: req.body.source.trim().split('\n'),
         directions: req.body.directions.trim().split('\n'),
         likes: 0,
         user: req.user.id,
