@@ -68,7 +68,7 @@ module.exports = {
         image: result.secure_url,
         cloudinaryId: result.public_id,
         caption: req.body.caption,
-        country: req.body.country,
+        tag: req.body.tag,
         dish: req.body.dish,
         ingredients: req.body.ingredients.trim().split('\n'),
         directions: req.body.directions.trim().split('\n'),
