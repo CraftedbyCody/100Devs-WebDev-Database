@@ -9,6 +9,22 @@ const PostSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
+  tag: {
+    type: String,
+    require: true,
+  },
+  // dish: {
+  //   type: String,
+  //   require: true,
+  // },
+  source: {
+    type: String,
+    require: true,
+  },
+  ankiQuestion: {
+    type: String,
+    require: true,
+  },
   cloudinaryId: {
     type: String,
     require: true,
@@ -18,7 +34,11 @@ const PostSchema = new mongoose.Schema({
     required: true,
   },
   likes: {
-    type: Number,
+    type: Array,
+    required: true,
+  },
+  favorites: {
+    type: Array,
     required: true,
   },
   user: {
