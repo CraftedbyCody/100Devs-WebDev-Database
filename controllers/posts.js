@@ -71,7 +71,7 @@ module.exports = {
         tag: req.body.tag,
         dish: req.body.dish,
         source: req.body.source.trim().split('\n'),
-        directions: req.body.directions.trim().split('\n'),
+        ankiQuestion: req.body.ankiQuestion.trim().split('\n'),
         likes: 0,
         user: req.user.id,
       });
