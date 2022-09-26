@@ -117,21 +117,21 @@ module.exports = {
       }
     },
 
-  bookmarkPost: async (req, res)=>{
-    var bookmarked = false
+  favoritePost: async (req, res)=>{
+    var favorited = false
     try{
       var post = await Post.findById({_id:req.params.id})
-      bookmarked = (post.bookmarks.includes(req.user.id))
+      favorited = (post.favorites.includes(req.user.id))
     } catch(err){
     }
-    if(bookmarked){
+    if(favorited){
       try{
         await Post.findOneAndUpdate({_id:req.params.id},
           {
-            $pull : {'bookmarks' : req.user.id}
+            $pull : {'favorites' : req.user.id}
           })
           
-          console.log('Removed user from bookmarks array')
+          console.log('Removed user from favorites array')
           res.redirect('back')
         }catch(err){
           console.log(err)
@@ -141,10 +141,10 @@ module.exports = {
         try{
           await Post.findOneAndUpdate({_id:req.params.id},
             {
-              $addToSet : {'bookmarks' : req.user.id}
+              $addToSet : {'favorites' : req.user.id}
             })
             
-            console.log('Added user to bookmarks array')
+            console.log('Added user to favorites array')
             res.redirect(`back`)
         }catch(err){
             console.log(err)

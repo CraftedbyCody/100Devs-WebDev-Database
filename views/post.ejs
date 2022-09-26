@@ -19,10 +19,10 @@
           <h3 class="col"><%= post.likes.length - 1 %></h3>
           <form
             class="col justify-content-end"
-            action="/post/bookmarkPost/<%= post.id %>?_method=PUT"
+            action="/post/favoritePost/<%= post.id %>?_method=PUT"
             method="POST"
           >
-          <button class="<%if(post.bookmarks.includes(user.id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
+          <button class="<%if(post.favorites.includes(user.id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
             btn btn-primary" type="submit"></button>
           </form>
         </div>
