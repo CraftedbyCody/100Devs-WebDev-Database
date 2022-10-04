@@ -2,9 +2,10 @@
 
 <div class="container card-container">
     <div class="row">
-      <h1><%= post.title %></h1>
-      <p><%= post.caption %></p>
-      <p>By: <%= user.userName %></p>
+      <h1>TITLE: <%= post.title %></h1><hr class="style1">
+      <span> TAG: <%= post.tag%></span><hr class="style1">
+      <p>CAPTION: <%= post.caption %></p><hr class="style1">
+      <p>BY: <%= user.userName %></p><hr class="style1">
       <div class="col-md-6">
         <img src="<%= post.image%>" class="img-fluid" alt="Responsive image">
         <div class="row row-cols-3">
@@ -28,10 +29,10 @@
         </div>
       </div>
       <div class="col-md-6">
-        <h3 class="display-4">INFO</h3>
-        <h2>Source</h2> <hr class="style1">
-        <p><%= post.source %></p>
-          <h2>ankiQuestion</h2> <hr class="style1">
+        <!-- <h3 class="display-4">INFO</h3> -->
+        <h2>SOURCE LINK</h2> <hr class="style1">
+        <p><a href="<%= post.source %>"><%= post.source %></a></p>
+          <h2>ANKI QUESTION</h2> <hr class="style1">
           <p><%= post.ankiQuestion %></p>
           </ol>
       </div>

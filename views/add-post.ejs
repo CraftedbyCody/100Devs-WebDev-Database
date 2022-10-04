@@ -1,14 +1,10 @@
 <%- include('partials/logged-in-header') -%>
+
 <div class="container card-container">
   <div class="row justify-content-center">
       <div class="col-6">
-          <!-- <div>
-              <p><strong>User Name</strong>: <%= user.userName %></p>
-              <p><strong>Email</strong>: <%= user.email %></p>
-              <!-- <a href="/logout" class="col-3 btn btn-primary">Logout</a> -->
-          <!-- </div> --> 
           <div class="mt-5">
-            <h2>Add a recipe</h2>
+            <h2>Share your knowledge!</h2>
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
               <div class="mb-3">
                   <label for="title" class="form-label">Post Title</label>
@@ -21,28 +17,21 @@
                 <option value="CSS">CSS</option>
                 <option value="HTML">HTML</option>
                 <option value="JavaScript">JavaScript</option>
-                <option value="Backend">Backend</option>
+                <option value="Node">Node</option>
+                <option value="Express">Express</option>
+                <option value="MongoDB and Mongoose">MongoDB and Mongoose</option>
+                <option value="React">React</option>
+                <option value="Job Hunt Prep">Job Hunt Prep</option>
+                <option value="Job Postings">Job Postings</option>
+
               </select>
               </div>
-              <!-- <div class="mb-3">
-                <label for="basic-url" class="form-label">Dish Type</label>
-                <select class="form-select" aria-label="Default select example" id="dish" name="dish">
-                  <option selected>Please Select</option>
-                  <option value="Main Dish">Main Dish</option>
-                  <option value="Side Dish">Side Dish</option>
-                  <option value="Salsa">Salsa</option>
-                  <option value="Appetizer">Appetizer</option>
-                  <option value="Snack">Snack</option>
-                  <option value="Dessert">Dessert</option>
-                  <option value="Drink">Drink</option>
-                </select>
-                </div> -->
               <div class="mb-3">
                 <label for="caption" class="form-label">Caption</label>
                 <textarea class="form-control" id="caption" name="caption"></textarea>
               </div>
               <div class="mb-3">
-                <label for="source" class="form-label">Source</label>
+                <label for="source" class="form-label">Source Link</label>
                 <textarea class="form-control" id="source" name="source" placeholder="Paste the link to this tool/tip/trick." rows="5"></textarea>
               </div>
               <div class="mb-3">
@@ -57,20 +46,7 @@
             </form>
           </div>
       </div>
-      <!-- <div class="col-6">
-        <ul class="row list-unstyled">
-        <% for(var i=0; i<posts.length; i++) {%>
-          <li class="col-6 justify-content-between mt-5">
-            <a href="/post/<%= posts[i]._id%>">
-              <img class="img-fluid" src="<%= posts[i].image%>">
-            </a>
-          </li>
-        <% } %>
-        </ul>
-        <div class="row justify-content-center mt-5">
-          <a class="btn btn-primary" href="/feed">Return to Feed</a>
-        </div>  
-      </div>   -->
     </div>
   </div>
-<!-- <%- include('partials/footer') -%> -->
+
+<%- include('partials/footer') -%> 
