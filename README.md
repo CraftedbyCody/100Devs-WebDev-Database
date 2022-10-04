@@ -22,6 +22,7 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 # Optimizations / Features to Add
 
 As an MVP, the bare minimum functions of the app are working. However, if we had had more time, there are several things we would have liked to have done, including: 
+- Sort by Tag: posts are already tagged by field, such as CSS, JavaScript, or Job Prep. Creating page(s) to sort and show ONLY posts from a specific tag is next step. 
 - ANKI feature: grab a random post, only show the ankiQuestion portion from the database, when you are satisfied with answering the question, press button to load the rest of post. "Poor man's ANKI". 
 - Comments: add comments to posts so that people can talk about good and bad aspects of the post, with threaded comments ideally. 
 
