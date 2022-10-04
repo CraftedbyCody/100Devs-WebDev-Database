@@ -4,14 +4,14 @@ An MVP for "The 100Devs WebDev Database - A Community-Taught Experience". Envisi
 
 ---
 
-<!-- # Screenshots
+# Screenshots
 
-<img src="https://i.imgur.com/2ejbU2v.jpeg" width=400 />
-<img src="https://i.imgur.com/vYkiS2y.jpeg" width=400 />
-<img src="https://i.imgur.com/QdzNSnh.jpeg" width=400 />
-<img src="https://i.imgur.com/lnrBgf0.jpeg" width=400 />
+<img src="https://i.imgur.com/I738ARv.png" width=400 />
+<img src="https://i.imgur.com/AM4Ppgj.png" width=400 />
+<img src="https://i.imgur.com/WmA1Mo6.png" width=400 />
+<img src="https://i.imgur.com/Cy6qiM5.png" width=400 />
 
---- -->
+---
 
 # Packages/Dependencies used 
 
